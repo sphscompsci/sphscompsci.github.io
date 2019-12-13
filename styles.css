@@ -31,3 +31,8 @@ h1:hover{
     color: white;
     bottom: 0;
 }
+
+.pres{
+    border: 6px solid white;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.582), -5px -5px 15px rgba(0, 0, 0, 0.582);
+}
