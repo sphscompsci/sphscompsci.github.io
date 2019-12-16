@@ -28,7 +28,7 @@ body{
  .seal{
      z-index: 5;
      text-align: center;
-     opacity: 7%;
+     opacity: 7%!important;
  }
 
  a:hover{
