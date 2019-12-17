@@ -1,19 +1,34 @@
 body{
-    background-image: url("bg1.png");
     background-repeat: none;
-    height: 150vh;
+    margin: 0px;
+    background-color: black;
 }
 
-.header{
+.container{
+    background-image: url("bg1.png");
+    height: 200vh;
+}
+
+.navbar{
     width: 100%;
     height: 100px;
-    background-color: hsla(0, 0%, 0%, 0.6969);
-    border-radius: 50px;
-    
+    background-color: hsl(0, 0%, 0%);
+    overflow: hidden;
+    position: sticky;
+}
+.navbar a{ 
+    float: left;
+    font-size: 25px;
+    color:white;
+    text-decoration: none;
+    min-width: 150px;
+    padding-top: 17px;
+    padding-bottom: 40px;
+    padding-left: 20px;
 }
 
 .footer {
-    position: fixed;
+    
     left: 0;
     bottom: 0;
     width: 100%;
@@ -21,16 +36,51 @@ body{
     color: white;
     text-align: center;
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: lighter;
+    padding: 5px 0px;
  }
 
  .seal{
-     z-index: 5;
      text-align: center;
-     opacity: 7%!important;
+     opacity: 7%;
  }
 
- a:hover{
-    text-shadow: 2px 2px rgb(255, 0, 149);
+
+ .hoc{
+    float: right;
+    align-items: center;
+    height: 10px;
+}
+ .hoc-btn{
+    outline: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    width: 125px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
  }
+
+ .hoc-btn:hover{
+     background-color: rgb(255, 0, 138);
+ }
+
+ .a-btn{
+     height: 5px;
+     cursor: auto;
+ }
+
+ .dmca-badge{
+    position: static;
+    left: 0;
+    bottom: 0;
+ }
+
+
+
+
+
