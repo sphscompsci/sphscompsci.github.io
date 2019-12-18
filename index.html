@@ -10,12 +10,12 @@
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
     </head>
 
-    <body>
+    <body id="body">
       <header>
-      <div class="navbar">
-        <img title="Gope!"  src="seal-solid.png" style="height: 100px; float: left;"></img>
+      <div class="navbar" id="navbarBG">
+        <img title="Gope!" id="seal-btn" src="seal-trans.png" style="height: 100px; float: left; cursor: pointer;" onclick="myFunc()"></img>
 
-        <a href="index.html" title="SPHS CS" style="color: white; font-family: 'Lexend Deca', sans-serif; font-size: 25px; font-weight: lighter; ">  South Plainfield High School<br>
+        <a href="index.html" id="title-text" title="SPHS CS" style="color: white; font-family: 'Lexend Deca', sans-serif; font-size: 25px; font-weight: lighter; ">  South Plainfield High School<br>
           Computer Science</a>
 
         <div class="hoc">
@@ -24,19 +24,52 @@
             </a>
         </div>
 
+        <audio loop id="myAudio"><source src="synthwave.mp3" type="audio/mp3"></audio>
+
+          
+
       </div>
- <div class="container">   
-      <div class="seal">
+      <div class="container">   
+       <div class="seal">
         <img src="seal-trans.png"></img>
-  </div>
+      </div>
 </header>
   <footer>
-    <div class="footer">
-      <a href="//www.dmca.com/Protection/Status.aspx?ID=1b3f0626-d8e0-4d71-9307-6d4ab04e415a" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_26_120.png?ID=1b3f0626-d8e0-4d71-9307-6d4ab04e415a"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-        <p><code>Est. 12/15/19 | &#9400sphscompsci.github.io 2019</code></p>
+    <div class="footer" id="footerBG">
+      <a href="//www.dmca.com/Protection/Status.aspx?ID=1b3f0626-d8e0-4d71-9307-6d4ab04e415a" target="blank"  title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_26_120.png?ID=1b3f0626-d8e0-4d71-9307-6d4ab04e415a"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+        <p><code> Est. 12/15/19  | &#9400sphscompsci.github.io 2019</code></p>
     </div>
   </footer>
 
+  <script>
+
+    var title = document.getElementById("title-text");
+    var seal_btn = document.getElementById("seal-btn");
+    var aud = document.getElementById("myAudio");
+    var navbar = document.getElementById("navbarBG");
+    var footer = document.getElementById("footerBG");
+
+    function myFunc(){
+      if(aud.paused){
+        alert("Gope! Easter Egg found\nTurn on Audio\nI promise its not Ritz Cracker" )
+        aud.play();
+        title.style.fontFamily="future";
+        title.style.color="white";
+        title.style.textShadow="3px 3px black";
+        title.style.fontSize="27px";
+        title.innerHTML=" SPHS Computer Science ";
+        navbar.style.backgroundImage="linear-gradient(-45deg, #ee7752, #e73c7e, #ee0979, #ff6a00)";
+        seal_btn.style.display="none"
+        footer.style.backgroundImage="linear-gradient(-45deg, #ee7752, #e73c7e, #ee0979, #ff6a00)";
+      }
+      else{
+        aud.pause();
+        seal_btn.style.display=seal_btn;
+        navbar.style.backgroundImage="black";
+      }
+    }
+
+  </script>
         
        
 
