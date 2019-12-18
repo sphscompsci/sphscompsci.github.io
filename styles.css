@@ -1,21 +1,42 @@
 body{
     background-repeat: none;
     margin: 0px;
-    background-color: black;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(153, 14, 90, 0.562)), url(bg1.png) center center;
 }
 
+
 .container{
-    background-image: url("bg1.png");
     height: 200vh;
 }
+
+
 
 .navbar{
     width: 100%;
     height: 100px;
-    background-color: hsl(0, 0%, 0%);
+    background: black;
+    background-size: 150% 100%;
     overflow: hidden;
     position: sticky;
+    animation: navbarGradient 7s ease infinite;
 }
+
+@keyframes navbarGradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	25% {
+		background-position: 50% 50%;
+	}
+	50% {
+		background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+
+
 .navbar a{ 
     float: left;
     font-size: 25px;
@@ -38,8 +59,12 @@ body{
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     font-weight: lighter;
+    background-size: 200% 100%;
     padding: 5px 0px;
+    animation: navbarGradient 7s ease infinite;
  }
+
+
 
  .seal{
      text-align: center;
@@ -80,6 +105,11 @@ body{
     bottom: 0;
  }
 
+
+ @font-face{
+     font-family: "future";
+     src: url("Outrun\ future\ Bold.otf");
+ }
 
 
 
