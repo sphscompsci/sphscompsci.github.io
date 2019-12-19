@@ -1,12 +1,14 @@
 body{
     background-repeat: none;
     margin: 0px;
+    overflow-x: hidden;
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(153, 14, 90, 0.562)), url(bg1.png) center center;
 }
 
 
 .container{
-    height: 200vh;
+    height: 200vh; 
+    width: 100%;
 }
 
 
@@ -14,10 +16,9 @@ body{
 .navbar{
     width: 100%;
     height: 100px;
-    background: black;
-    background-size: 150% 100%;
+    background: rgb(7,7,7);
+    background-size: 300% 100%;
     overflow: hidden;
-    position: sticky;
     animation: navbarGradient 7s ease infinite;
 }
 
@@ -30,6 +31,9 @@ body{
 	}
 	50% {
 		background-position: 100% 100%;
+    }
+    75%{
+        background-position: 50% 50%;
     }
     100%{
         background-position: 0% 0%;
@@ -53,15 +57,17 @@ body{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    height: 100px;
+    background-color: rgb(7, 7, 7);
     color: white;
     text-align: center;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     font-weight: lighter;
-    background-size: 200% 100%;
-    padding: 5px 0px;
+    background-size: 250% 100%;
     animation: navbarGradient 7s ease infinite;
+    padding: 20px 5px;
+    
  }
 
 
