@@ -24,20 +24,21 @@
             </a>
         </div>
 
-        <audio id="myAudio" loop ><source src="synthwave.mp3" type="audio/mp3"></audio>
+        <audio loop id="myAudio"><source src="synthwave.mp3" type="audio/mp3"></audio>
 
           
 
       </div>
       <div class="container">   
-       <div class="seal">
+       <div class="seal" id="big-seal">
         <img src="seal-trans.png"></img>
       </div>
 </header>
   <footer>
     <div class="footer" id="footerBG">
+      <img src="seal-trans.png" style="width: 110px; float: left;"></img>
       <a href="//www.dmca.com/Protection/Status.aspx?ID=1b3f0626-d8e0-4d71-9307-6d4ab04e415a" target="blank"  title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_26_120.png?ID=1b3f0626-d8e0-4d71-9307-6d4ab04e415a"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-        <p><code> Est. 12/15/19  | &#9400 2019 sphscompsci.github.io All rights reserved</code></p>
+        <p><code> Est. 12/15/19  | &#9400 2019 sphscompsci.github.io All rights reserved | Updated: 12.18.19 </code></p>
     </div>
   </footer>
 
@@ -48,6 +49,8 @@
     var aud = document.getElementById("myAudio");
     var navbar = document.getElementById("navbarBG");
     var footer = document.getElementById("footerBG");
+    var bodyBG = document.getElementById("body");
+    var big_seal = document.getElementById("big-seal");
 
     function myFunc(){
       if(aud.paused){
@@ -57,14 +60,17 @@
         title.style.color="white";
         title.style.textShadow="3px 3px black";
         title.style.fontSize="27px";
-        title.innerHTML=" SPHS Computer Science ";
+        title.innerHTML=" SPHS Computer Science";
         navbar.style.backgroundImage="linear-gradient(-45deg, #ee7752, #e73c7e, #ee0979, #ff6a00)";
         seal_btn.style.display="none"
+        big_seal.style.display="none"
         footer.style.backgroundImage="linear-gradient(-45deg, #ee7752, #e73c7e, #ee0979, #ff6a00)";
+        bodyBG.style.backgroundImage="url(car.gif)"
       }
       else{
         aud.pause();
         seal_btn.style.display=seal_btn;
+        big_seal.style.display=big_seal;
         navbar.style.backgroundImage="black";
       }
     }
