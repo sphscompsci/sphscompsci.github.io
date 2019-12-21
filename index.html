@@ -8,50 +8,48 @@
         <title>SPHS | Computer Science</title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154881989-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-
-         gtag('config', 'UA-154881989-1');
-        </script>
     </head>
 
     <body id="body">
       <header>
-      <div class="navbar" id="navbarBG">
-        <img title="Gope!" id="seal-btn" src="seal-trans.png" style="height: 100px; float: left; cursor: pointer;" onclick="myFunc()"></img>
+       <div class="navbar" id="navbarBG">
+           <img title="Gope!" id="seal-btn" src="school-seal.png" style="height: 110px; float: left; cursor: pointer;" onclick="myFunc()"></img>
 
-        <a href="index.html" id="title-text" title="SPHS CS" style="color: white; font-family: 'Lexend Deca', sans-serif; font-size: 25px; font-weight: lighter; ">  South Plainfield High School<br>
+          <a href="index.html" id="title-text" title="SPHS CS" style="color: white; font-family: 'Lexend Deca', sans-serif; font-size: 27px; font-weight: lighter; ">  South Plainfield High School<br>
           Computer Science</a>
-
-        <div class="hoc">
-            <a href="hoc.html" class="a-btn">
-                <button class="hoc-btn" title="Hour of Code 2019">Hour of Code</button>
-           
+        </div>
+        <div class="sec-nav">
+          <a href="not-found.html" title="Explore CS Curriculum">Courses</a>
+          <span style="color: white; font-weight: bolder;font-size: 25px;">|</span>
+          <a href="not-found.html" title="Computer Science Club">CS Club</a>
+          <span style="color: white; font-weight: bolder;font-size: 25px;">|</span>
+          <a href="hoc.html" title="Hour of Code 2019">Hour of Code</a>
         </div>
 
-        <audio loop id="myAudio"><source src="synthwave.mp3" type="audio/mp3"></audio>
+
+          <audio loop id="myAudio"><source src="synthwave.mp3" type="audio/mp3"></audio>
 
           
+         <div class="container">
+            <div class="welcome">
+              <br> <br>
+              <h1 style="margin: 0;padding: 0;line-height: 0.9; float: left; ">Welcome</h1>
+              <hr></hr>
+              <p style="float: left;">Students will be able to get lit...</p>
+              <br>
+            </div>
+            <img src="seal-trans.png" id="big-seal" style="bottom: 0; opacity: 7%;"></img>
+         </div>
+      
+      </header>
 
-      </div>
-      <div class="container">   
-       <div class="seal" id="big-seal">
-        <img src="seal-trans.png"></img>
-      </div>
-</header>
   <footer>
     <div class="footer" id="footerBG">
-      <img src="seal-trans.png" style="width: 110px; float: left;"></img>
       <a href="//www.dmca.com/Protection/Status.aspx?ID=1b3f0626-d8e0-4d71-9307-6d4ab04e415a" target="blank"  title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_26_120.png?ID=1b3f0626-d8e0-4d71-9307-6d4ab04e415a"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
         <p><code> Est. 12/15/19  | &#9400 2019 sphscompsci.github.io All rights reserved | Updated: 12.18.19 </code></p>
     </div>
   </footer>
-
+ 
   <script>
 
     var title = document.getElementById("title-text");
@@ -69,13 +67,13 @@
         title.style.fontFamily="future";
         title.style.color="white";
         title.style.textShadow="3px 3px black";
-        title.style.fontSize="27px";
+        title.style.fontSize="30px";
         title.innerHTML=" SPHS Computer Science";
         navbar.style.backgroundImage="linear-gradient(-45deg, #ee7752, #e73c7e, #ee0979, #ff6a00)";
-        seal_btn.style.display="none"
-        big_seal.style.display="none"
+        seal_btn.style.display="none";
+        big_seal.style.display="none";
         footer.style.backgroundImage="linear-gradient(-45deg, #ee7752, #e73c7e, #ee0979, #ff6a00)";
-        bodyBG.style.backgroundImage="url(car.gif)"
+        bodyBG.style.backgroundImage="url(car.gif)";
       }
       else{
         aud.pause();
