@@ -1,0 +1,55 @@
+body{
+    background: url("bg1.png");
+    
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    font-size: 60px;
+    margin: auto;
+    font-weight: bold;
+}
+
+h1:hover{
+    text-shadow: 3px 3px rgb(255, 0, 149);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.intro{
+    background: url("blue-bg.jpg");
+    height: 495px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.788), -2px -2px 10px rgba(0, 0, 0, 0.788);
+    font-family: 'Lexend Deca', sans-serif;
+    padding-left: 30px; 
+    color: white;
+    border-radius: 20px;
+}
+
+.cyber{
+    background: url("black-bg.png");
+    height: 495px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.788), -2px -2px 10px rgba(0, 0, 0, 0.788);
+    font-family: 'Lexend Deca', sans-serif;
+    padding-left: 30px;  
+    color: white;
+    border-radius: 20px;
+}
+
+.ap{
+    background: url("red-bg.jpg");
+    height: 495px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.788), -2px -2px 10px rgba(0, 0, 0, 0.788);
+    font-family: 'Lexend Deca', sans-serif;
+    padding-left: 30px; 
+    color: white;
+    border-radius: 20px;
+}
