@@ -3,10 +3,12 @@ body{
     margin: 0px;
     overflow-x: hidden;
     background-image: url("bg1.png");
+    
 }
 
+
 .container{
-    height: 200vh;
+    height: 160vh;
     width: 100%;
     padding: 10px 0px;
     text-align: center;
@@ -22,6 +24,7 @@ body{
     overflow: hidden;
     padding: 5px 5px;
     animation: navbarGradient 7s ease infinite;
+    border-bottom: 1px solid rgb(48, 48, 48);
 }
 
 .sec-nav{
@@ -47,7 +50,7 @@ body{
 }
 
 .sec-nav a:hover{
-    color: rgb(250, 67, 174);
+    color: rgb(255, 77, 174);
 }
 
 .welcome{
@@ -60,6 +63,7 @@ body{
     text-align: center;
     font-family: 'Lexend Deca', sans-serif;
     padding: 0px 30px;
+    border-radius: 20px;
 }
 
 
