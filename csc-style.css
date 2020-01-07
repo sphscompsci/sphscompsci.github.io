@@ -14,7 +14,8 @@ body,html{
     background-color: rgba(19, 3, 18, 0.70);
     height: 100vh;
     width: 100%;
-    animation: reveal 2.5s;
+    animation: reveal 2s;
+    backdrop-filter: blur(5px);
 }
 
 h1{
