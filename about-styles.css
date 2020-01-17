@@ -1,0 +1,71 @@
+
+
+body,html{
+    margin: 0;
+    background-image:radial-gradient( rgba(0, 124, 0, 0.829), rgba(0, 0, 0, 0.925) 110%);
+    height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+img{
+    opacity: 12%;
+    position:absolute;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position:relative
+}
+
+h1{
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    text-shadow: 1px 1px 1px white;
+    font-size: 20px;
+}
+
+h2{
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    text-shadow: 1px 1px 1px white;
+    font-size: 20px;   
+}
+
+span{
+    color: goldenrod;
+    text-shadow: 1px 1px 1px goldenrod;
+}
+
+b1{
+    color: red;
+    text-shadow:  1px 1px 1px red;
+}
+
+b{
+    color: cyan;
+    text-shadow: 1px 1px 1px cyan;
+}
+
+b2{
+    color: magenta;
+    text-shadow: 1px 1px 1px magenta;
+}
+
+gope{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
