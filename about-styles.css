@@ -10,6 +10,7 @@ body,html{
 
 img{
     opacity: 12%;
+    filter: opacity(12%);
     position:absolute;
 }
 
