@@ -1,0 +1,184 @@
+@font-face{
+    src: url("Aurebesh.ttf");
+    font-family: 'Aurebesh';
+}
+
+@font-face{
+    src: url("FRABK.TTF");
+    font-family: 'Franklin Gothic Book'; 
+}
+
+body{
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.prompt{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    text-align: center;
+    font-family: 'Aurebesh';
+    width: 50%;
+    height: 200px;
+    color: #E1B100;
+    cursor: pointer;
+}
+
+button{
+    font-family: 'Aurebesh';
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #E1B100;
+    width: 100px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #E1B100;
+    color: black;
+}
+
+img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: logo-crawl 13s forwards;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.context{
+    color: #19AEB7;
+    font-family: 'Franklin Gothic Book';
+    animation: fade 7s forwards;
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: left;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    bottom: 20%;
+    position: relative;
+    margin: 0;
+}
+
+.intro-text{
+    margin: 0 auto;
+    color: #E1B100;
+    font-family: sans-serif;
+    font-size: 7vw;
+    overflow: absolute;
+    perspective: 350px;
+    perspective-origin: bottom;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+    overflow: visible;
+    background-image: linear-gradient(to bottom, rgb(202, 24, 24), rgba(0, 0, 0, 0));
+    text-align: center;
+}
+
+.crawl-text{
+    position: absolute;
+    top: 0;
+    left: 13%;
+    right: 13%;
+    height: 100%;
+    animation: crawl 87s linear;
+    transform:  rotateX(35deg) translate3d(0, 58vh, 0);
+    text-align: center;
+}
+
+.ep-info{
+    margin-bottom: 5rem;
+}
+
+.ep-info h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.ep-info h2{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.story{
+    font-size: 3rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+@keyframes fade{ /*Works gg*/
+    0%{
+        opacity: 0%;
+        filter: opacity(0%);
+    }
+    20%{
+        opacity: 100%;
+        filter: opacity(100%);
+    }
+    66%{
+        opacity: 100%;
+        filter: opacity(100%);
+    }
+    85%{
+        opacity: 0%;
+        filter: opacity(0%);
+    }
+    100%{
+        opacity: 0%;
+        filter: opacity(0%);
+    }
+}
+
+
+@keyframes logo-crawl{  /*Works gg*/
+    0%{
+        width: 100%;
+    }
+    70%{
+        opacity: 100%;
+        filter: opacity(100%);
+    }
+    100%{
+        width: 5%;
+        opacity: 0%;
+        filter: opacity(0%);
+    }
+}
+
+@keyframes crawl{
+    0%{
+        transform:  rotateX(35deg) translate3d(0, 58vh, 0);
+    }
+    85%{
+        opacity: 100%;
+        filter: opacity(100%);
+    }
+    100%{
+        transform: rotateX(35deg) translate3d(0, -550vh, 0);
+        opacity: 0%;
+        filter: opacity(0%);
+    }
+}
+

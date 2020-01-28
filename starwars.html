@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link type="text/css" rel="stylesheet" href="star-style.css"/>
+        <title>Projects | STAR WARS INTRO</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    </head>
+    <body id="body" >
+
+        <div class="prompt" id="prompt">
+            <h1>Enable Sound?</h1>
+            <button id="y-btn" onclick="showContext(); delayFuncYes(); delayCrawl(); hideLogo()" onmouseover="translate()">Yes</button><span style="font-size: 30px;"> /</span>
+            <button id="n-btn" onclick="showContext(); delayFuncNo(); delayCrawl(); hideLogo()">No</button>
+        </div>
+
+        <div class="container">
+            <div class="context" id="context">
+                <h3>A long time ago in a galaxy far, <br> far away. . . .</h3>
+            </div>
+        </div>
+
+        <audio src="crawl-music.mp3" type="audio/mp3" id="music"></audio>
+
+        <div class="orange-overlay">
+             <img src="star-wars.png" id="logo"></img>
+        </div>
+
+        <div class="intro-text" id="text">
+            <div class="crawl-text">
+                <div class="ep-info">
+                    <h1>EPISODE X</h1>
+                    <h2>RETURN OF THE GOPE</h2>
+                </div>
+                <div class="story">
+                    <p>
+                        Chris the grease ravager has returned.
+                        He has joined the GOPE alliance.
+                        GOPE a shooter, I'm my own shooter <br>
+                        All this ice, I'm my own jeweler <br>
+                        Six lawyers and they all JEWS <br>
+                        I'm the star, GOPE, this my movie<br>
+                        Pinky ring, TWO-FIFTY on it<br>
+                        Guess it's safe to say, <br>
+                        GOPE I spent your budget on it<br>
+                        Ran off on da plug TWICE<br>
+                        He's steady callin', 
+                        I ain't callin' back<br>
+                        He said he dissed me on his last ALBUM<br>
+                        Guess nobody heard <br>
+                        cause nobody bought his last album<br>
+                        I got a Delta, go to HOWARD<br>
+                        That little (=◕ᆽ◕ฺ=) got some POWER<br>
+                        Born broke but Imma die rich<br>
+                        Lot of these GOPE ggas counterfeit<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script>
+            var music = document.getElementById("music");
+            var logo = document.getElementById("logo");
+            var prompt = document.getElementById("prompt")
+            var yes = document.getElementById("y-btn");
+            var no = document.getElementById("n-btn");
+            var body = document.getElementById("body");
+            var context = document.getElementById("context");
+            var text = document.getElementById("text");
+
+            logo.style.display="none";
+            context.style.display="none"
+            text.style.display="none";
+
+            function showContext(){
+                context.style.display="block";
+                prompt.style.display="none";
+            }
+
+            function delayFuncYes(){
+                setTimeout(
+                    function playAudio(){
+                        music.play();
+                        logo.style.display="block";
+                        prompt.style.display="none";
+                        body.style.backgroundImage="url(stars.png)";
+                        text.style.display="block";
+                        context.style.display="none";},7000);
+            }
+
+            function delayFuncNo(){
+                setTimeout(
+                    function muteAudio(){
+                        logo.style.display="block";
+                        prompt.style.display="none";
+                        body.style.backgroundImage="url(stars.png)";
+                        text.style.display="block";
+                        music.paused();
+                        context.style.display="none";},7000);
+            }
+
+            function hideLogo(){
+                setTimeout(function(){
+                    logo.style.display="none";
+                })
+            }
+
+            function delayCrawl(){
+                setTimeout(function showCrawl(){
+                    text.style.display="block";
+                }, 12000)
+            }
+
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
+
+    </body>
+</html>

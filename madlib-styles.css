@@ -1,0 +1,107 @@
+@font-face{
+    src: url("SithProphecy-xPwV.ttf");
+    font-family: "Sith Gope";
+}
+
+
+@font-face{
+    src: url("FRABK.TTF");
+    font-family: 'Franklin Gothic Book'; 
+}
+
+body{
+    background-color: black;
+    margin:0;
+}
+
+.vidbg {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+}
+  .vidbg video {
+    min-width: 100%; 
+    min-height: 100%; 
+    max-width: screen;
+    max-height: screen;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    zoom: 0.01;
+}
+
+input{
+    position: relative;
+    margin: 30px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    font-size: 17px;
+    color: rgb(255, 0, 0);
+    width: 100px;
+    font-family: 'Franklin Gothic Book';
+}
+
+input:hover{
+    width: 300px;
+    background-color: rgb(255, 253, 253);
+    border-color: red;
+    box-shadow: 3px 3px 7px red, -3px -3px 7px red;
+    transition: 0.3s;
+    color: rgb(255, 0, 0);
+}
+
+.prompt{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    text-align: center;
+    font-family: "Sith Gope";
+    width: 50%;
+    height: 200px;
+    color: rgb(192, 0, 0);
+    font-size: 20px;
+}
+
+button{
+    font-family: "Sith Gope";
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: rgb(192, 0, 0);
+    width: 120px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    color: black;
+    background-color: rgb(192, 0, 0);
+}
+
+.submit{
+    position: relative;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background: rgb(195, 226, 252);
+    border: 3px solid rgb(0, 86, 199);
+    color: rgb(0, 86, 199);
+    box-shadow: 3px 3px 7px rgb(0, 86, 199), -3px -3px 7px rgb(0, 86, 199);
+    cursor: pointer;
+    height: 40px;
+    font-family: 'Franklin Gothic Book';
+}
+
+.submit:hover{
+    width: 100px;
+}

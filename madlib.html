@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link type="text/css" rel="stylesheet" href="madlib-styles.css"/>
+        <title>Projects | STAR WARS</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <script src="madlib.js"></script>
+        <div class="prompt" id="prompt">
+            <h1>Enable Sound?</h1>
+            <button class="y-btn" onclick="playAudio()">Yes</button><span style="font-size: 30px;"> / </span>
+            <button class="n-btn" onclick="muteAudio()">No</button><br>
+        </div>
+
+        <audio src="duel-of-fates.mp3" type="audio/mp3" loop id="audio"></audio>
+
+        <div class="vidbg" id="bg">
+            <video autoplay="true" loop="true"  muted width: "auto" height: "auto">
+                <source src="darth-maul.mp4" type="video/mp4">
+            </video>
+
+            <div class="input">
+                <form id="form" action="starwars.html">
+                    <input type="text" placeholder="NOUN #1"></input><br> 
+                    <input type="text" placeholder="NOUN #2"></input><br>
+                    <input type="text" placeholder="NOUN#3"></input><br>
+                    <input type="text" placeholder="NOUN #4"></input><br>
+                    <input type="text" placeholder="NOUN #5"></input><br>
+                    <input type="text" placeholder="NOUN #6"></input><br>
+                    <input type="text" placeholder="NOUN #7"></input><br>
+                    <input type="text" placeholder="NOUN #8"></input><br>
+                    <input type="submit"  class="submit" value="SUBMIT" onclick="madlibSwitch();"></input>
+                </form>
+        
+            </div>
+        </div>
+        
+        <script src="madlib.js">
+            
+        </script>
+    </body>
+</html>

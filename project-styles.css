@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    background-image:url("https://media.giphy.com/media/vOgpALRSTYLvO/source.gif");
+    background-size: 100%;
+}
+
+.area{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 94, 0, 0.651),rgba(255, 0, 106, 0.616),rgba(190, 62, 209, 0.753));
+    position: fixed;
+    backdrop-filter: blur(5px);
+}
+
+.starwars{
+    width: 20%;
+    height: 25%;
+    border: 5px solid white;
+    margin: 15px;
+    position: absolute;
+    background: black;
+    cursor: pointer;
+}
+
+.starwars img{
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.starwars:hover{
+    background-image: url("stars.png");
+    transition: 0.4s;
+}
+
+.starwars:hover img{
+    width: 90%;
+    transition: 0.3s;
+}
