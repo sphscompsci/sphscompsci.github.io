@@ -11,8 +11,16 @@
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
     </head>
 
-    <body>  
-        <div class="container">
+    <body id="bg"> 
+
+        <div class="prompt" id="prompt">
+            <h1>Enable Music?</h1>
+            <button class="y-btn" onclick="playAudio()">Yes</button><span style="font-size: 30px;">/</span>
+            <button class="n-btn" onclick="muteAudio()">No</button></pink>
+        </div>
+
+        <audio src="stuxnet-zero-days-beat.mp3" type="audio/mp3" loop id="audio"></audio>
+        <div class="container" id="container">
             <h1 style="padding:0px 10px;font-size: 60px;font-family: 'Hacked', sans-serif;font-weight: lighter;color: white; text-shadow: 2px 2px rgb(255, 0, 106), -2px -2px rgb(0, 175, 0);" onclick="myFunc()"><mark style="background-color: rgba(0, 0, 0, 0.692); color: white;padding: 5px 15px;">:/CS Club</mark></h1>
     
             <div class="options">
@@ -29,5 +37,33 @@
                     <p>> about</p>
                 </a>
             </div>
-        </div>    
+        </div> 
+        
+        <script>
+            var bg = document.getElementById("bg");
+            var prompt = document.getElementById("prompt");
+            var options = document.getElementById("container");
+            var audio = document.getElementById("audio");
+
+            options.style.display = "none"; 
+            bg.style.background = "black";   
+
+            function playAudio(){
+                options.style.display = "block";
+                prompt.style.display = "none";
+                bg.style.background = "url(cybercity-bg.gif)"; 
+                bg.style.backgroundRepeat = "no-repeat";
+                bg.style.backgroundSize = "100%";
+                audio.play();
+            } 
+
+            function muteAudio(){
+                options.style.display = "block";
+                prompt.style.display = "none";
+                bg.style.background = "url(cybercity-bg.gif)"; 
+                bg.style.backgroundRepeat = "no-repeat";
+                bg.style.backgroundSize = "100%";
+                audio.paused();   
+            }      
+        </script>
     </body>
